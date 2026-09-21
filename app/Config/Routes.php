@@ -7,3 +7,4 @@ $routes->get('/', 'Pages::home');
 $routes->get('about', 'Pages::about');
 $routes->get('customers', 'Customers::index');
 $routes->get('users', 'Users::index');
+$routes->get('/tasks/(:num)', 'Tasks::show/$1');
